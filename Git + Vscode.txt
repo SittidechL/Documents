@@ -1,0 +1,87 @@
+https://www.youtube.com/watch?v=RR_Ih6d71YA&list=RDCMUCeKE6wQHTt5JpS9_RsH4hrg&start_radio=1&rv=RR_Ih6d71YA&t=607
+pwd --> directory
+mkdir --> Make directory
+ls = list
+rm = remove <file>
+rm -r  <folder>
+code . --> open vscode
+
+vscode --> command pallete--> Git init..... --> select folder
+
+git push -u origin master
+
+-------------Basic git workflow-----------------------------
+Working Directory -เปลี่ยนแปลงแก้ไขไฟล์ +สร้างไฟล์ไหม่ -ลบไฟล์เดิม แก้ไชไฟล์เดิม
+Staging Area -นำไฟล์ที่เปลี่ยนแปลงเข้า Staging area
+Repository -บันทึกการเปลี่ยนแปลงไปเก็บไว้ใน Repository แบบถาวรโดยการ Commit
+-------------------------------------------
+git config --global user.name "Sittidech Lobyam"
+git config --global user.email "sittidech.lobyam@gmail.com"
+git config --global --list
+
+----------------------------
+
+echo "me: hello Git" >> greeing.txt
+
+git init
+  Initialized empty Git repository in C:/Users/eo2397/Test/git-demo/.git/
+
+git status
+--------------------------------------
+staged : สถานะที่ไฟล์พร้อมจะ commit
+unstaged : ไฟล์ที่ถูกแก้ไขแต่ว่ายังไม่ได้เตรียม commit
+untracked : ไฟล์ที่ยังไม่ถูก track โดย Git (ส่วนมากจะเป็นไฟล์ที่เพิ่งสร้างใหม่)
+deleted : ไฟล์ที่ถูกลบไปแล้ว
+-------------Working Directory ----------------------------
+git init ไว้สร้าง git repository
+git status ตรวจสอบสถานะไล์ของ working directory และ staging area
+git add <file> เพิ่มไฟล์ the working directory เข้าสู้ staging area
+git diff <file> แสดงความแตกต่างของไปล์ระหว่าง working directory กับ staging area
+git commit -m "first commit" เก็บประวัติการแก้ไขแบบถาวรจาก staging area ไว้ใน repository
+git log แสดงรายการที่ commit ทั้งหมด
+-----------------------------------
+ git log --oneline --graph --decorate --all
+
+echo "" > greeing.txt
+
+git show head
+
+git checkout head greeing.txt <กู้ไฟล์คืนมา>
+
+-------------Staging Area-------------
+git branch ใช้แสดงรายชื่อ branch ทั้งหมด
+git branch <branch_name> สร้าง branch ใหม่
+git checkout <branch_name> สลับไปใง้งาน branch ที่ระบุ
+git merge <branch_name> ใช้รวามไฟล์จาก branch ที่ระบุ มายัง branch ปัจจุบัน
+git branch -d <branch_name> (delete) ลบ branch ที่ระบุ
+
+------------------------------
+git clone https://github.com/SittidechL/git-demo.git
+
+git remote -v
+
+--------------origin to local ---------
+git fetch
+
+git merge origin/main(master)
+
+git pull (git fetch + git merge)
+------------------------------------
+echo -e "\nThis line from local repository" >> readme.md
+
+-------------local to origin-------------
+git add .
+
+git commit -m "Update readme.md from local"
+
+git push -u origin main
+------------------------------------
+
+-------------------Repository-----------------------
+git clone สร้าง local repository จาก remote repository
+git remote -v แสดงรายการ remote address ทั้งหมด
+git fetch ดึงข้อมูลทังหมดจกาผั้ง remote มายัง local
+git merge orinin/master(main) สั้งรวมไฟล์จาก origin/master(main) มายัง local branch
+git pull สั้งรวมไฟล์จกาผัง remote มายัง local (git fetch + git merge)
+git push origin <branch_name> ส่งข้อมูลจาก local branch ไปรวมกับ originremote
+------------------------------------------------------
