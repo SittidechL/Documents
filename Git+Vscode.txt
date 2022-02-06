@@ -1,3 +1,4 @@
+Git on rapberry pi : https://linuxize.com/post/how-to-install-git-on-raspberry-pi/
 https://www.youtube.com/watch?v=RR_Ih6d71YA&list=RDCMUCeKE6wQHTt5JpS9_RsH4hrg&start_radio=1&rv=RR_Ih6d71YA&t=607
 pwd --> directory
 mkdir --> Make directory
