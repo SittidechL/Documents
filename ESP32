@@ -58,3 +58,10 @@ Hash of data verified.
 Leaving...
 Hard resetting via RTS pin...
 -----------------------------------------------------------------
+
+---------------------VS Code + Ampy --------------------------
+PS D:\Pex\Tutorial> pip install adafruit-ampy
+
+PS D:\Pex\Tutorial> ampy --port COM5 run test.py
+--------------------------------------------------------------
+
