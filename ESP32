@@ -6,7 +6,8 @@ https://dl.espressif.com/dl/esp-idf/?idf=4.4
 ==>install ESP-IDF for flash
 
 
+
 ========
 Down load --> ESP-IDF 
-Down load --> CP210XX
+Down load --> CP210XX (USB to Serial)
 Down load --> Putty
