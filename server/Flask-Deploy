@@ -1,3 +1,21 @@
+https://www.youtube.com/watch?v=2Pcy44-wtio
+Create And Deploy Flask Web Application on Apache / Production
+
+sudo nano /etc/apache2/sites-available/000-default.conf
+
+#DocumentRoot /var/www/html
+WSGIScriptAlias / /var/www/html/web/app.wsgi
+<Directory /var/html/web>
+Order allo,deny
+Allow from all
+</Directory>
+
+
+
+
+
+
+
 How to Deploy a Flask App to Linux (Apache and WSGI)
 https://www.youtube.com/watch?v=w0QDAg85Oow
 
