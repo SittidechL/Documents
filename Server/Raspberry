@@ -1,0 +1,36 @@
+NGinX
+Mysql
+Flask
+
+cat /etc/os-release
+sudo systemctl status mysql
+sudo apt-get remove --purge mysql-server mysql-client mysql-common
+
+-------NGinx-----------
+https://www.youtube.com/watch?v=ECsQ8jbpMow
+
+-------Mysql-----------
+https://www.youtube.com/watch?v=hdzAKhJaYq8
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo apt-get install mariadb-server
+sudo apt-get install default-libmysqlclient-dev (:E enable)
+sudo apt-get install libqt5sql5-mysql
+sudo apt-get install libcrypto++-dev libcrypto++-doc libcrypto++-utils 
+sudo apt-get install apache2
+sudo apt-get install phpmyadmin
+sudo nano /etc/apache2/apache2.conf
+
+Add this line at the very bottom of file above
+Include /etc/phpmyadmin/apache.conf
+
+sudo /etc/init.d/apache2 restart
+
+sudo mysql -u root
+UPDATE mysql.user SET plugin = 'mysql_native_password', Password = PASSWORD('12345678') WHERE User = 'root';
+FLUSH PRIVILEGES;
+
+http://localhost/phpmyadmin
+username: root
+password: 12345678
