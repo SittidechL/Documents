@@ -28,7 +28,10 @@ pi@raspberrypi:/var/www/html $ sudo mysql --user=root --password
 > exit;
 
 pi@raspberrypi:/var/www/html $ sudo apt install phpmyadmin -y
-
+pi@raspberrypi: sudo mysql -u root
+> UPDATE mysql.user SET plugin = 'mysql_native_password', Password = PASSWORD('12345678') WHERE User = 'root';
+> FLUSH PRIVILEGES;
+> exit
 -------------------------------------------
 Start/Stop nginx
 sudo service nginx status
