@@ -1,4 +1,86 @@
+----------------------------------------
+https://www.youtube.com/watch?v=ZDcbb_VjIQs
+https://randomnerdtutorials.com/raspberry-pi-apache-mysql-php-lamp-server
+Install Apache + MySQL + PHP (LAMP Server) on Raspberry Pi
+
+pi@raspberrypi:~ $ sudo apt update && sudo apt upgrade -y
+pi@raspberrypi:~ $ sudo apt install apache2 -y
+pi@raspberrypi:~ $ cd /var/www/html
+pi@raspberrypi:/var/www/html $ ls -al
+index.html
+pi@raspberrypi:/var/www/html $ hostname -I
+
+pi@raspberrypi:/var/www/html $ sudo apt install php -y
+pi@raspberrypi:/var/www/html $ sudo rm index.html
+pi@raspberrypi:/var/www/html $ sudo nano index.php
+<?php echo "hello world"; ?>
+pi@raspberrypi:/var/www/html $ sudo service apache2 restart
+pi@raspberrypi:/var/www/html $ sudo rm index.php
+
+pi@raspberrypi:/var/www/html $ sudo apt install mariadb-server php-mysql -y
+pi@raspberrypi:/var/www/html $ sudo service apache2 restart
+
+pi@raspberrypi:/var/www/html $ sudo mysql_secure_installation
+pi@raspberrypi:/var/www/html $ sudo mysql --user=root --password
+> create user admin@localhost identified by 'your_password';
+> grant all privileges on *.* to admin@localhost;
+> FLUSH PRIVILEGES;
+> exit;
+
+pi@raspberrypi:/var/www/html $ sudo apt install phpmyadmin -y
+
+-------------------------------------------
+Start/Stop nginx
+sudo service nginx status
+sudo systemctl start nginx.service
+sudo systemctl stop nginx.service
+--------------------------------------------
+
 https://www.youtube.com/watch?v=ozo_npQMQS8
 Raspberry Pi MYSQL & PHPMyAdmin Tutorial
 
+sudo apt-get update
+sudo apt-get upgrade
 sudo apt-get install mysql-server
+  new password/repeat password
+mysql -u root -p
+/h
+quit
+sudo apt-get install apache2 php5 libapache2-mod-php5
+sudo apt-get install phpmyadmin
+
+sudo nano /etc/apache2/apache2.conf
+  Add this line at the very bottom of file above
+  include /etc/phpmyadmin/apache.conf
+
+sudo /etc/init.d/apache2 restart
+hostname -I
+
+------------------------------------------------
+https://www.youtube.com/watch?v=OBbTkBy2blI
+Raspberry Pi: Web Server Setup (Apache, PHP, MySQL, PHPMyAdmin)
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install apache2 -y
+sudo apt-get install libapache3-mod-php
+cd /var/www
+sudo chown pi: html
+sudo /etc/init.d/apache2 restart
+sudo apt install mariadb-server php-mysql -y
+sudo mysql  (create user/password)
+MariaDB [(none)]> CREAT USER 'admin'@'localhost' IDENTIFIED BY 'password';
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON *.* to 'admin'@'localhost' WITH GRANI OPTION;
+MariaDB [(none)]> quit
+sudo apt-get install phpmyadmin
+sudo nano /etc/apache2/apache2.conf
+    Add this line at the very bottom of file above
+    include /etc/phpmyadmin/apache.conf
+sudo /etc/init.d/apache2 restart
+sudo reboot
+
+----------------------------------------
+https://www.youtube.com/watch?v=ZDcbb_VjIQs
+https://randomnerdtutorials.com/raspberry-pi-apache-mysql-php-lamp-server
+Install Apache + MySQL + PHP (LAMP Server) on Raspberry Pi
+
