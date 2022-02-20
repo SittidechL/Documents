@@ -1,3 +1,11 @@
+-------------------------------------------
+Start/Stop nginx
+sudo service nginx status
+sudo systemctl start nginx.service
+sudo systemctl stop nginx.service
+sudo /etc/init.d/apache2 restart
+--------------------------------------------
+
 ----------------------------------------
 https://www.youtube.com/watch?v=ZDcbb_VjIQs
 https://randomnerdtutorials.com/raspberry-pi-apache-mysql-php-lamp-server
@@ -32,12 +40,7 @@ pi@raspberrypi: sudo mysql -u root
 > UPDATE mysql.user SET plugin = 'mysql_native_password', Password = PASSWORD('12345678') WHERE User = 'root';
 > FLUSH PRIVILEGES;
 > exit
--------------------------------------------
-Start/Stop nginx
-sudo service nginx status
-sudo systemctl start nginx.service
-sudo systemctl stop nginx.service
---------------------------------------------
+
 
 https://www.youtube.com/watch?v=ozo_npQMQS8
 Raspberry Pi MYSQL & PHPMyAdmin Tutorial
