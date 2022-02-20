@@ -1,0 +1,15 @@
+How to Deploy a Flask App to Linux (Apache and WSGI)
+https://www.youtube.com/watch?v=w0QDAg85Oow
+
+---------
+https://www.youtube.com/watch?v=vCi2aDNXml8
+How to Install Flask on Windows 10 (Python)
+Flask install
+python -V
+pip -V
+pip install flask
+------------------
+
+
+Filezella
+/var/www/
