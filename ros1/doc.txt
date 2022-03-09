@@ -1,5 +1,29 @@
-~/robot_ws/src$ catkin_create_pkg test_pkg rospy roscpp
+~/robot_ws/src$ catkin_create_pkg test_pkg rospy roscpp std_msgs geometry_msgs
 ~/robot_ws$ catkin_make
+~/robot_ws$ rospack list
 ~/robot_ws$ source devel/setup.bash
 /robot_ws/src/test_pkg$ rosrun test_pkg simple_pub.py
 ~/robot_ws/src/test_pkg$ rosrun test_pkg simple_sub.py
+
+
+
+note:
+rosmsg show std_msgs/string
+  string data
+rosmsg show geometry_msgs/Twist
+  geometry_msgs/Vector3 linear
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Vector3 angular
+    float64 x
+    float64 y
+    float64 z
+
+rostopic list
+  /robot_pub
+  /rosout
+  /rosout_agg
+  
+rostopic echo /twist_pub
+
