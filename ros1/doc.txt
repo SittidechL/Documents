@@ -5,7 +5,8 @@
 /robot_ws/src/test_pkg$ rosrun test_pkg simple_pub.py
 ~/robot_ws/src/test_pkg$ rosrun test_pkg simple_sub.py
 
-
+>>ls -la
+>>chmod +x <file> -->create permittion
 
 note:
 rosmsg show std_msgs/string
@@ -27,3 +28,33 @@ rostopic list
   
 rostopic echo /twist_pub
 
+roscore  --> runserver
+
+rostopic pub -1 /twist_pub press <tap>
+
+
+
+------------------------
+ROSpackage and workspace
+  ~/robot_ws
+  ~/robot_ws/src/test_pkg
+  
+ROS Node, Topic, Message
+  ~/robot_ws/src/test_pkg/script/simple_pub.py
+  ~/robot_ws/src/test_pkg/script/simple_sub.py
+  
+ROS launch
+  ~/robot_ws/src/test_pkg/launch/pubsub.launch
+  >>roslaunch test_pkg pubsub.launch
+ROS Bag
+  >>rosbag record -a
+  >>rosbag play 2022-03-08-07-04-50.bag
+  >>rosbag record -o subset /twist_pub
+  >>rosbag play subset_2022-03-10-05-32-07.bag
+ROS Services 
+https://www.youtube.com/watch?v=rDPsTDXEJ8I&list=PLipqPwX8B8i7fCuqkpsmtnmsNbKh0YvaT&index=8
+  ~$ roscore 
+  ~$ rossrv list
+  ~$ rossrv show std_srvs/SetBool
+  ~$ rosrun test_pkg service_call.py
+  
