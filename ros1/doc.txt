@@ -2,6 +2,7 @@
 ~/robot_ws$ catkin_make
 ~/robot_ws$ rospack list
 ~/robot_ws$ source devel/setup.bash
+~/robot_ws$ roscore
 /robot_ws/src/test_pkg$ rosrun test_pkg simple_pub.py
 ~/robot_ws/src/test_pkg$ rosrun test_pkg simple_sub.py
 
