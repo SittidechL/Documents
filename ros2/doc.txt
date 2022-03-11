@@ -1,0 +1,9 @@
+Get ROS Galactic Gechelone -->  » Installation » Installing ROS 2 via Debian Packages
+https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html
+
+source /opt/ros/galactic/setup.bash
+source /opt/ros/galactic/setup.bash
+ros2 run demo_nodes_cpp talker
+
+------------------------------------------
+
