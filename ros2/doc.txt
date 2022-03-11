@@ -49,6 +49,9 @@ ls -la /dev/tty* for check usb connect or/not
 ++++run
 ~/microros_ws$ source /opt/ros/galactic/setup.bash
 ~/microros_ws$ source install/local_setup.bash
+~/microros_ws$ ros2 pkg list
+https://github.com/micro-ROS/micro_ros_setup
+
 ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888
   =>Package 'micro_ros_agent' not found
   https://answers.ros.org/question/382329/micro-ros-package-micro_ros_agent-not-found/
