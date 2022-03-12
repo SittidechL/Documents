@@ -1,0 +1,72 @@
+-----------------------------------------------------------------------------------------
+Get ROS Galactic Gechelone -->  » Installation » Installing ROS 2 via Debian Packages
+https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html
+---------------------------------------------------------------------------------------
+source /opt/ros/galactic/setup.bash
+source /opt/ros/galactic/setup.bash
+ros2 run demo_nodes_cpp talker
+
+------------------------------------------
+microros-->First micro-ROS Application on Linux
+https://micro.ros.org/docs/tutorials/core/first_application_linux/
+
+if can't use command: colcon build please install below
+sudo apt install python3-colcon-common-extensions
+
+---------------------------------------
+microros --> arduio ide
+-------------------------------------------
+
+***for Error "exec: "python": executable file not found in $PATH***
+sudo apt install python-is-python3
+  To prevent Python2 from being installed as a dependency of something in the future:
+sudo apt-mark hold python2 python2-minimal python2.7 python2.7-minimal libpython2-stdlib libpython2.7-minimal libpython2.7-stdlib
+
+***ModuleNotFoundError: No module named 'serial'
+***exit status 1
+***Error compiling for board Node32s.
+sudo apt install python3-pip
+pip3 install pyserial
+-----------------------------
+sudo usermod -a -G dialout sittidechl
+sudo chmod a+rw /dev/ttyUSB0
+
+=======================
+https://dl.espressif.com/dl/package_esp32_index.json
+http://arduino.esp8288com/stable/package_esp8266com_index.json
+==================================
+***ESP32**
+source /opt/ros/galactic/setup.bash
+ros2 run micro_ros_setup create_firmware_ws.sh freertos esp32
+ifconfic
+ros2 run micro_ros_setup configure_firmware.sh int32_publisher -t udp -i 192.168.1.166 -p 8888
+ros2 run micro_ros_setup build_firmware.sh menuconfig
+<---connect esp32--->
+ls -la /dev/tty*
+  =>crw-rw-rw- 1 root       dialout 188,  0 Mar 11 21:13 /dev/ttyUSB0
+ros2 run micro_ros_setup build_firmware.sh
+ros2 run micro_ros_setup flash_firmware.sh
+ls -la /dev/tty* for check usb connect or/not
+
+++++run++++++++++++++++++++++++++++++++++++++++++++++++++++++
+https://github.com/micro-ROS/micro_ros_setup
+~/microros_ws$ source /opt/ros/galactic/setup.bash
+~/microros_ws$ source install/local_setup.bash
+~/microros_ws$ ros2 pkg list
+~/microros_ws$ ros2 run micro_ros_setup configure_firmware.sh int32_publisher -t udp -i 192.168.1.166 -p 8888
+~/microros_ws$ ros2 run micro_ros_setup build_firmware.sh menuconfig
+
+<---connect esp32--->
+ls -la /dev/tty*
+  =>crw-rw-rw- 1 root       dialout 188,  0 Mar 11 21:13 /dev/ttyUSB0
+
+ros2 run micro_ros_setup build_firmware.sh
+ros2 run micro_ros_setup flash_firmware.sh
+
+
+s -la /dev/tty* for check usb connect or/not
+
+ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888
+
+ros2 topic list
+ros2 topic echo /freetos_int32_publisher
