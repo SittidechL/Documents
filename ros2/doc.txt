@@ -47,20 +47,26 @@ ls -la /dev/tty*
 ros2 run micro_ros_setup build_firmware.sh
 ros2 run micro_ros_setup flash_firmware.sh
 ls -la /dev/tty* for check usb connect or/not
-++++run
+
+++++run++++++++++++++++++++++++++++++++++++++++++++++++++++++
+https://github.com/micro-ROS/micro_ros_setup
 ~/microros_ws$ source /opt/ros/galactic/setup.bash
 ~/microros_ws$ source install/local_setup.bash
 ~/microros_ws$ ros2 pkg list
-https://github.com/micro-ROS/micro_ros_setup
+~/microros_ws$ ros2 run micro_ros_setup configure_firmware.sh int32_publisher -t udp -i 192.168.1.166 -p 8888
+~/microros_ws$ ros2 run micro_ros_setup build_firmware.sh menuconfig
+
+<---connect esp32--->
+ls -la /dev/tty*
+  =>crw-rw-rw- 1 root       dialout 188,  0 Mar 11 21:13 /dev/ttyUSB0
+
+ros2 run micro_ros_setup build_firmware.sh
+ros2 run micro_ros_setup flash_firmware.sh
+
+
+s -la /dev/tty* for check usb connect or/not
 
 ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888
-  =>Package 'micro_ros_agent' not found
-  https://answers.ros.org/question/382329/micro-ros-package-micro_ros_agent-not-found/
-    ros2 run micro_ros_setup create_agent_ws.sh
-    ros2 run micro_ros_setup build_agent.sh
-    source install/local_setup.bash
-  https://snapcraft.io/micro-ros-agent  
-    micro-ros-agent --help
-    sudo snap install micro-ros-agent
 
 ros2 topic list
+ros2 topic echo /freetos_int32_publisher
