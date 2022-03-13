@@ -3,5 +3,5 @@
 2. test2
 
 * test2
-+
-[(arduino)](https://www.arduino.cc/)
+
+[arduino](https://www.arduino.cc/)
