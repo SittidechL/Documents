@@ -16,7 +16,7 @@ sudo apt autoremove
 sudo reboot
 ```
 ## Install ROS2 Galactic Geochelone on Ubuntu 20.04.1
-[ROS2 Galactic Geochelone | Installation | Ubuntu 20.04](https://www.youtube.com/watch?v=B8RIE0obHqw)
+[ROS2 Galactic Geochelone | Installation | Ubuntu 20.04](https://www.youtube.com/watch?v=B8RIE0obHqw) <br>
 [Install ROS2 via Debian Packages](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html)
 ### Set locale
 ```
