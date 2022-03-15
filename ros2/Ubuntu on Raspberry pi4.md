@@ -72,7 +72,10 @@ listener:
 source /opt/ros/galactic/setup.bash
 ros2 run demo_nodes_py listener
 ```
-
+Copy past
+```
+sudo apt-get install xclip
+```
 
 
 
