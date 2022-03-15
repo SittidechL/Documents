@@ -1,2 +1,6 @@
-## [How to install Etcher "image writer"](https://linuxhint.com/etcher-image-writer-ubuntu-burn-images/)
-## [How to Install Ubuntu on Raspberry Pi 4 | A Complete Guide](https://www.youtube.com/watch?v=1-IiLA8chCA)
+## Etcher
+* [Etcher download](https://www.balena.io/etcher/)
+* [How to install Etcher "image writer"](https://linuxhint.com/etcher-image-writer-ubuntu-burn-images/)
+## Ubuntu on PI4
+* [Unbutu20.04 Download](https://ubuntu.com/download/raspberry-pi)
+* [How to Install Ubuntu on PI4](https://www.youtube.com/watch?v=1-IiLA8chCA)
