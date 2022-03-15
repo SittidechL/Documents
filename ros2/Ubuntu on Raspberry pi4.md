@@ -5,7 +5,9 @@
 * [Unbutu20.04 Download](https://ubuntu.com/download/raspberry-pi)
 * [How to Install Ubuntu on PI4](https://www.youtube.com/watch?v=1-IiLA8chCA)
 ```
-workssid:
+#      myworkwifi:
+#        password: "correct battery horse staple"
+#      workssid:
 #        auth:
 #          key-management: eap
 #          method: peap
