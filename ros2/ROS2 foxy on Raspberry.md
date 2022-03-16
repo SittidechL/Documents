@@ -8,7 +8,7 @@ sudo dpkg -i imager_1.7.1_amd64.deb
 - after finished then check on ***Show Application***
 2. Access in Rapberry pi4 by SSH command line
 ```
-ssh ubuntu@192/168.1.107
+ssh ubuntu@192.168.1.107
 username: ubuntu
 password: ubuntu
 oldpassword:ubuntu
@@ -16,7 +16,7 @@ newpassword:********
 ```
 - reboot by it self and one more time to try again SSH
 ```
-ssh ubuntu@192/168.1.107
+ssh ubuntu@192.168.1.107
 username: ubuntu
 password: *******
 ```
@@ -86,4 +86,16 @@ ls    # check file of setup.bash
 sudo nano ~/.bashrc  # go down last and typing below 
 source ~/ro2_ws/install/setup.bash  # ctr+x >> y >> enter 
 
+```
+- Try some examples
+If you installed ros-foxy-desktop above you can try some examples.
+In one terminal, source the setup file and then run a C++ talker:
+```
+source /opt/ros/foxy/setup.bash
+ros2 run demo_nodes_cpp talker
+```
+In another terminal source the setup file and then run a Python listener:
+```
+source /opt/ros/foxy/setup.bash
+ros2 run demo_nodes_py listener
 ```
