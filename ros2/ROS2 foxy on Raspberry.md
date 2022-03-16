@@ -55,6 +55,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 ```
 sudo apt update
 sudo apt install ros-foxy-desktop   # setup time about 15 min
+> sudo apt-cache search ros-foxy* # if can't install ros-foxy-desktop
 # Finished to install of Ros2
 ```
 * ros2 to source
