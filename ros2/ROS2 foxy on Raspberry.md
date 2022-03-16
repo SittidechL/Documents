@@ -59,11 +59,9 @@ sudo apt install ros-foxy-desktop   # setup time about 15 min
 source /opt/ros/foxy/setup.bash
 ros2 # check command of ros2
 
-export DISPLAY=192.168.1.107:0
-# Add source to ~/.bashrc using gedit
-sudo nano ~/.bashrc
-# go down last and typeing below 
-source /opt/ros/foxy/setup.bash
+# Add source to ~/.bashrc using cmd: sudo nano
+sudo nano ~/.bashrc   # go down last and typeing below 
+source /opt/ros/foxy/setup.bash   # ctr+x >> y >> enter
 ```
 - install argcomplete (option)
 ```
