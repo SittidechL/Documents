@@ -58,7 +58,6 @@ locale  # verify settings
 ```
 - Setup Sources
 ```
-sudo apt update
 sudo apt update && sudo apt install curl gnupg2 lsb-release
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
 ```
@@ -74,14 +73,37 @@ sudo apt install ros-foxy-desktop   # setup time about 15 min
 ```
 source /opt/ros/foxy/setup.bash
 ros2 # check command of ros2
-sudo apt install gedit
+
 export DISPLAY=192.168.1.107:0
 # Add source to ~/.bashrc using gedit
 sudo nano ~/.bashrc
-# go down last and type: 
+# go down last and typeing below 
 source /opt/ros/foxy/setup.bash
 ```
+- install argcomplete (option)
+```
+sudo apt install -y python3-pip
+pip3 install -U argcomplete
+```
+- install colcon for ROS2 builds
+```
+sudo apt install python3-colcon-common-extensions
+sudo nano ~/.bashrc  # go down last and typing below 
+source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash  # ctr+x >> y >> enter
+```
+- create workspace
+```
+mkdir ros2_ws && cd ros2_ws
+mkdir src
+ls   # check directory of src
+colcon build
+ls    # check directory of install
+cd install
+ls    # check file of setup.bash
+sudo nano ~/.bashrc  # go down last and typing below 
+source ~/ro2_ws/install/setup.bash  # ctr+x >> y >> enter 
 
+```
 
 ## Install ROS2 Galactic Geochelone on Ubuntu 20.04.1
 [ROS2 Galactic Geochelone | Installation | Ubuntu 20.04](https://www.youtube.com/watch?v=B8RIE0obHqw) <br>
@@ -139,11 +161,7 @@ listener:
 ```
 source /opt/ros/galactic/setup.bash
 ros2 run demo_nodes_py listener
-```
-Copy past
-```
-sudo apt-get install xclip
-```
+
 
 
 
