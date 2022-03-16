@@ -54,6 +54,7 @@ sudo apt update
 sudo apt install ros-foxy-desktop   # setup time about 15 min
 # Finished to install of Ros2
 ```
+* ros2 to source
 ```
 source /opt/ros/foxy/setup.bash
 ros2 # check command of ros2
