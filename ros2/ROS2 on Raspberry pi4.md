@@ -22,7 +22,7 @@ sudo reboot
 cd Downloads
 sudo dpkg -i imager_1.7.1_amd64.deb
 ```
-
+ after finished then check on ***Show Application
 
 ## Install ROS2 Galactic Geochelone on Ubuntu 20.04.1
 [ROS2 Galactic Geochelone | Installation | Ubuntu 20.04](https://www.youtube.com/watch?v=B8RIE0obHqw) <br>
