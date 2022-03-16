@@ -17,10 +17,10 @@ sudo reboot
 ```
 ## Install ROS2 on Raspberry PI4
 [05: Setting up ROS 2 on a Raspberry PI 4](https://www.youtube.com/watch?v=eCknRpMj9uc)<br>
-1. Raspberry Pi imager on Ubuntu <br>
-'''
+1. Raspberry Pi imager on Ubuntu
+```
 ~/Downloads$ sudo dpkg -i imager_1.7.1_amd64.deb
-'''
+```
 
 
 ## Install ROS2 Galactic Geochelone on Ubuntu 20.04.1
