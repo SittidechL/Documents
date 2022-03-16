@@ -8,7 +8,10 @@ sudo dpkg -i imager_1.7.1_amd64.deb
 - after finished then check on ***Show Application***
 2. Access in Rapberry pi4 by SSH command line
 ```
-ssh ubuntu@192.168.1.107
+ssh root@192.168.1.113  # NanoPi Neo
+username: root
+password: fa
+ssh ubuntu@192.168.1.107  # PI4
 username: ubuntu
 password: ubuntu
 oldpassword:ubuntu
