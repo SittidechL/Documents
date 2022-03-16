@@ -1,5 +1,4 @@
-## Install ROS2 on Raspberry PI4
-[05: Setting up ROS 2 on a Raspberry PI 4](https://www.youtube.com/watch?v=eCknRpMj9uc)<br>
+## [05: Setting up ROS2 on a Raspberry PI 4](https://www.youtube.com/watch?v=eCknRpMj9uc)<br>
 1. Raspberry Pi imager on Ubuntu
 ```
 cd Downloads
@@ -8,6 +7,7 @@ sudo dpkg -i imager_1.7.1_amd64.deb
 - after finished then check on ***Show Application***
 2. Access in Rapberry pi4 by SSH command line
 ```
+lsb_release -a  # check version of ubuntu
 ssh root@192.168.1.113  # NanoPi Neo
 username: root
 password: fa
