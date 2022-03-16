@@ -89,7 +89,7 @@ source ~/ro2_ws/install/setup.bash  # ctr+x >> y >> enter
 ```
 - Try some examples <br>
 If you installed |ros-foxy-desktop| above you can try some examples. <br>
-In one terminal, source the setup file and then run a C++ |alker|:
+In one terminal, source the setup file and then run a C++ |talker|:
 ```
 source /opt/ros/foxy/setup.bash
 ros2 run demo_nodes_cpp talker
