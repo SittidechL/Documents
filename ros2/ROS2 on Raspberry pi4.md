@@ -40,7 +40,23 @@ password: *******
 - go to ***ubuntu@ubuntu:~$***
 ```
 sudo apt upgrade
+sudo apt update
 ```
+
+## [Installing ROS 2 via Debian Packages](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html)
+- Set locale
+```
+locale  # check for UTF-8
+
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+locale  # verify settings
+```
+
+
 
 
 ## Install ROS2 Galactic Geochelone on Ubuntu 20.04.1
