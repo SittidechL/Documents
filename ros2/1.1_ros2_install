@@ -52,7 +52,7 @@ ls -la /dev/tty* for check usb connect or/not
 https://github.com/micro-ROS/micro_ros_setup
 ~/microros_ws$ source /opt/ros/galactic/setup.bash
 ~/microros_ws$ source install/local_setup.bash
-~/microros_ws$ ros2 pkg list
+~/microros_ws$ ros2 pkg list   # micro_ros_setup
 ~/microros_ws$ ros2 run micro_ros_setup configure_firmware.sh int32_publisher -t udp -i 192.168.1.166 -p 8888
 ~/microros_ws$ ros2 run micro_ros_setup build_firmware.sh menuconfig
 
