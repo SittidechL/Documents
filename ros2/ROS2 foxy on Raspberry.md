@@ -11,7 +11,7 @@ lsb_release -a  # check version of ubuntu
 ssh root@192.168.1.113  # NanoPi Neo
 username: root
 password: fa
-ssh ubuntu@192.168.1.107  # PI4
+ssh ubuntu@192.168.1.116  # PI4
 username: ubuntu
 password: ubuntu --> wsinsidenet
 oldpassword:ubuntu
