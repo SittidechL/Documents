@@ -13,7 +13,7 @@ username: root
 password: fa
 ssh ubuntu@192.168.1.107  # PI4
 username: ubuntu
-password: ubuntu
+password: ubuntu --> wsinsidenet
 oldpassword:ubuntu
 newpassword:********
 ```
