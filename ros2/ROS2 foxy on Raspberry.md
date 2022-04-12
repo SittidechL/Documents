@@ -1,3 +1,7 @@
+```
+curl https://download.argon40.com/argon1.sh | bash
+argonone-config
+```
 ## [05: Setting up ROS2 on a Raspberry PI 4](https://www.youtube.com/watch?v=eCknRpMj9uc)<br>
 1. Raspberry Pi imager on Ubuntu
 ```
