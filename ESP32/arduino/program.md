@@ -1,6 +1,7 @@
 https://randomnerdtutorials.com/projects-esp32/
 ## PWM
 ![image](https://user-images.githubusercontent.com/60011264/163656438-23070075-f013-4785-9bdd-573bb49d7a30.png)
+
 ```
 // the number of the LED pin
 const int ledPin = 16;  // 16 corresponds to GPIO16
