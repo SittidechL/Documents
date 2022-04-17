@@ -86,9 +86,9 @@ void loop(){
 ```
 [Topic](#0)
 
-## Analog Inputs<a id='4'></a>
+## Analog Inputs<a id=''></a>
 ![image](https://user-images.githubusercontent.com/60011264/163700286-73d3f76a-b30f-45cd-86d0-de531e4a2196.png)
-<iframe width="720" height="405" src="https://www.youtube.com/embed/doEY6yi9src" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+https://youtu.be/doEY6yi9src
 ```
 // Potentiometer is connected to GPIO 34 (Analog ADC1_CH6) 
 const int potPin = 34;
