@@ -10,7 +10,7 @@ https://randomnerdtutorials.com/projects-esp32/
 ## Input output<a id='1'></a>
 ![image](https://user-images.githubusercontent.com/60011264/163699930-b38f96b5-03a7-4efd-936f-dbf42315ca7c.png)
 
-```
+```arduino.ino
 // Complete Instructions: https://RandomNerdTutorials.com/esp32-digital-inputs-outputs-arduino/
 
 // set pin numbers
@@ -86,7 +86,7 @@ void loop(){
 ## Analog Inputs<a id='3'></a>
 ![image](https://user-images.githubusercontent.com/60011264/163700286-73d3f76a-b30f-45cd-86d0-de531e4a2196.png)
 https://youtu.be/doEY6yi9src
-```
+```arduino.ino
 // Potentiometer is connected to GPIO 34 (Analog ADC1_CH6) 
 const int potPin = 34;
 
@@ -168,7 +168,7 @@ void loop() {
 
 ## Deep Sleep<a id='5'></a>
 
-```
+```arduino.ino
 /*
 Simple Deep Sleep with Timer Wake Up
 =====================================
