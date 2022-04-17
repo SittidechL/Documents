@@ -1,5 +1,8 @@
 https://randomnerdtutorials.com/projects-esp32/
 
+## GPIO
+![image](https://user-images.githubusercontent.com/60011264/163699105-87e77b72-1bb1-41c8-8c4a-9f569d18cc9b.png)
+
 
 [![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
 
