@@ -1,21 +1,11 @@
 https://randomnerdtutorials.com/projects-esp32/
 
-I want to link to [Heading] without having to type [Heading].
-
-Heading
---------
-
-... more copy here as needed...
-
-[Heading]: #heading
-
-
 * [Pinout]
-* Input Outputs
-* PWM
-* Analog inputs
-* Iterrupts Timers
-* Deep Sleep
+* [Input Outputs]
+* [PWM]  
+* [Analog inputs]
+* [Iterrupts Timers]
+* [Deep Sleep]
 
 ## Pinout
 
@@ -96,6 +86,7 @@ void loop(){
 }
 
 ```
+[PWM]: #PWM
 ## Dc Motor
 ![image](https://user-images.githubusercontent.com/60011264/163657814-dfb5e29f-9d05-4dec-9eb5-a1581df289da.png)
 ![image](https://user-images.githubusercontent.com/60011264/163657833-41166af4-38a8-4702-ac42-850a8a38825a.png)
