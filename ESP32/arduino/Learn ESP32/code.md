@@ -1,4 +1,5 @@
 https://randomnerdtutorials.com/projects-esp32/
+* [ESP32 Pin30](https://github.com/SittidechL/Documents/blob/main/ESP32/arduino/pin.md)
 # Topic<a id='0'></a>
 * [Input Outputs](#1)
 * [PWM](#2)
@@ -43,10 +44,6 @@ void loop() {
 }
 ```
 [Topic](#0)
-
-[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
-
-* [ESP32 Pin30](https://github.com/SittidechL/Documents/blob/main/ESP32/arduino/pin.md)
 
 ## PWM<a id='2'></a>
 ![image](https://user-images.githubusercontent.com/60011264/163656438-23070075-f013-4785-9bdd-573bb49d7a30.png)
