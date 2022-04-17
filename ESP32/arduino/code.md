@@ -1,5 +1,12 @@
 https://randomnerdtutorials.com/projects-esp32/
 
+* Pinout
+* Input Outputs
+* PWM
+* Analog inputs
+* Iterrupts Timers
+* Deep Sleep
+
 ## GPIO
 
 ![image](https://user-images.githubusercontent.com/60011264/163699105-87e77b72-1bb1-41c8-8c4a-9f569d18cc9b.png)
