@@ -1,5 +1,5 @@
 https://randomnerdtutorials.com/projects-esp32/
-
+# Topic<a id='0'></a>
 * [Pinout](#1)
 * [Input Outputs](#2)
 * [PWM](#3)
@@ -7,10 +7,8 @@ https://randomnerdtutorials.com/projects-esp32/
 * [Iterrupts Timers](#5)
 * [Deep Sleep](#6)
 
-## Pinout<a id='1'></a>
+## Input output<a id='1'></a>
 ![image](https://user-images.githubusercontent.com/60011264/163699930-b38f96b5-03a7-4efd-936f-dbf42315ca7c.png)
-
-![image](https://user-images.githubusercontent.com/60011264/163699105-87e77b72-1bb1-41c8-8c4a-9f569d18cc9b.png)
 
 ```
 // Complete Instructions: https://RandomNerdTutorials.com/esp32-digital-inputs-outputs-arduino/
@@ -45,6 +43,8 @@ void loop() {
   }
 }
 ```
+[Topic](#0)
+
 [![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
 
 * [ESP32 Pin30](https://github.com/SittidechL/Documents/blob/main/ESP32/arduino/pin.md)
