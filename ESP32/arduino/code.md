@@ -1,5 +1,7 @@
 https://randomnerdtutorials.com/projects-esp32/
 
+[![Everything Is AWESOME](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/StTqXEQ2l-Y?t=35s "Everything Is AWESOME")
+
 [ESP32 Pin30](https://github.com/SittidechL/Documents/blob/main/ESP32/arduino/pin.md)
 ## PWM
 ![image](https://user-images.githubusercontent.com/60011264/163656438-23070075-f013-4785-9bdd-573bb49d7a30.png)
