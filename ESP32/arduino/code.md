@@ -1,4 +1,13 @@
 https://randomnerdtutorials.com/projects-esp32/
+I want to link to [Heading] without having to type [Heading].
+
+Heading
+--------
+
+... more copy here as needed...
+
+[Heading]: #heading
+
 
 * Pinout
 * Input Outputs
