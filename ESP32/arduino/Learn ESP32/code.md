@@ -1,11 +1,10 @@
 https://randomnerdtutorials.com/projects-esp32/
 # Topic<a id='0'></a>
-* [Pinout](#1)
-* [Input Outputs](#2)
-* [PWM](#3)
-* [Analog inputs](#4)
-* [Iterrupts Timers](#5)
-* [Deep Sleep](#6)
+* [Input Outputs](#1)
+* [PWM](#2)
+* [Analog inputs](#3)
+* [Iterrupts Timers](#4)
+* [Deep Sleep](#5)
 
 ## Input output<a id='1'></a>
 ![image](https://user-images.githubusercontent.com/60011264/163699930-b38f96b5-03a7-4efd-936f-dbf42315ca7c.png)
@@ -49,7 +48,7 @@ void loop() {
 
 * [ESP32 Pin30](https://github.com/SittidechL/Documents/blob/main/ESP32/arduino/pin.md)
 
-## PWM<a id='3'></a>
+## PWM<a id='2'></a>
 ![image](https://user-images.githubusercontent.com/60011264/163656438-23070075-f013-4785-9bdd-573bb49d7a30.png)
 
 ```arduino.ino
@@ -84,5 +83,33 @@ void loop(){
     delay(15);
   }
 }
+```
+[Topic](#0)
+
+## Analog Inputs<a id='4'></a>
+![image](https://user-images.githubusercontent.com/60011264/163700136-122b3202-e9d5-45e3-aebc-6928cc67da85.png)
+```
 
 ```
+
+[Topic](#0)
+
+
+## Interrupts Timers<a id='4'></a>
+![image](https://user-images.githubusercontent.com/60011264/163700136-122b3202-e9d5-45e3-aebc-6928cc67da85.png)
+```
+
+```
+
+[Topic](#0)
+
+
+## Deep Sleep<a id='5'></a>
+![image](https://user-images.githubusercontent.com/60011264/163700136-122b3202-e9d5-45e3-aebc-6928cc67da85.png)
+```
+
+```
+
+[Topic](#0)
+
+
