@@ -87,9 +87,26 @@ void loop(){
 [Topic](#0)
 
 ## Analog Inputs<a id='4'></a>
-![image](https://user-images.githubusercontent.com/60011264/163700136-122b3202-e9d5-45e3-aebc-6928cc67da85.png)
+![image](https://user-images.githubusercontent.com/60011264/163700286-73d3f76a-b30f-45cd-86d0-de531e4a2196.png)
+<iframe width="720" height="405" src="https://www.youtube.com/embed/doEY6yi9src" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ```
+// Potentiometer is connected to GPIO 34 (Analog ADC1_CH6) 
+const int potPin = 34;
 
+// variable for storing the potentiometer value
+int potValue = 0;
+
+void setup() {
+  Serial.begin(115200);
+  delay(1000);
+}
+
+void loop() {
+  // Reading potentiometer value
+  potValue = analogRead(potPin);
+  Serial.println(potValue);
+  delay(500);
+}
 ```
 
 [Topic](#0)
