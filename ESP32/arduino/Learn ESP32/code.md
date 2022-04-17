@@ -113,7 +113,7 @@ void loop() {
 ![image](https://user-images.githubusercontent.com/60011264/163700472-4b70f44a-7482-472c-9f71-d5c9f06bc959.png)
 ![image](https://user-images.githubusercontent.com/60011264/163700485-94cad09b-4f5a-449a-8a7b-9b276398653b.png)
 https://youtu.be/PcqiKy_rb24
-```
+```arduino.ino
 /*********
   Rui Santos
   Complete project details at https://randomnerdtutorials.com  
