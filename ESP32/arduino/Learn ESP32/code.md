@@ -12,36 +12,38 @@
 ![image](https://user-images.githubusercontent.com/60011264/163699930-b38f96b5-03a7-4efd-936f-dbf42315ca7c.png)
 
 ```arduino.ino
-// Complete Instructions: https://RandomNerdTutorials.com/esp32-digital-inputs-outputs-arduino/
-
-// set pin numbers
-const int buttonPin = 4;  // the number of the pushbutton pin
-const int ledPin =  5;    // the number of the LED pin
-
-// variable for storing the pushbutton status 
-int buttonState = 0;
-
-void setup() {
-  Serial.begin(115200);  
-  // initialize the pushbutton pin as an input
-  pinMode(buttonPin, INPUT);
-  // initialize the LED pin as an output
-  pinMode(ledPin, OUTPUT);
+// We assigned a name LED pin to pin number 22
+const int LEDPIN = 22; 
+// this will assign the name PushButton to pin numer 15
+const int PushButton = 21;
+// This Setup function is used to initialize everything 
+void setup()
+{
+  // This statement will declare pin 22 as digital output 
+  pinMode(LEDPIN, OUTPUT);
+  // This statement will declare pin 15 as digital input 
+  pinMode(PushButton, INPUT);
+  Serial.begin(115200);
 }
-
-void loop() {
-  // read the state of the pushbutton value
-  buttonState = digitalRead(buttonPin);
-  Serial.println(buttonState);
-  // check if the pushbutton is pressed.
-  // if it is, the buttonState is HIGH
-  if (buttonState == HIGH) {
-    // turn LED on
-    digitalWrite(ledPin, HIGH);
-  } else {
-    // turn LED off
-    digitalWrite(ledPin, LOW);
-  }
+void loop()
+{
+  // digitalRead function stores the Push button state 
+  // in variable push_button_state
+  int Push_button_state = digitalRead(PushButton);
+  // if condition checks if push button is pressed
+  // if pressed LED will turn on otherwise remain off 
+  if ( Push_button_state == HIGH )
+    { 
+      digitalWrite(LEDPIN, HIGH);
+      Serial.println(HIGH); 
+      delay(100);
+     }
+    else 
+    {
+    digitalWrite(LEDPIN, LOW); 
+    Serial.println(LOW);
+    delay(100);
+    }
 }
 ```
 [Topic](#0)
