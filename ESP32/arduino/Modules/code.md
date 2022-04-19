@@ -2,6 +2,7 @@
 * [Dc Motor](#1)
 * 
 ## Dc Motor<a id='1'></a>
+https://www.electronicsdna.com/basic-esp32-control-dc-motor-2ch/
 ![image](https://user-images.githubusercontent.com/60011264/164017831-6d67c101-1570-4738-9dd9-63bc893e0edc.png)
 
 ```arduino.ino
