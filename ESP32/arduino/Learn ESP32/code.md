@@ -1,6 +1,20 @@
 * https://esp32io.com/esp32-tutorials
 * https://randomnerdtutorials.com/projects-esp32/
 * [ESP32 Pin30](https://github.com/SittidechL/Documents/blob/main/ESP32/arduino/pin.md)
+
+```
+ESP32 39PIN WROOM
+M1_EN1 15
+M1_IN1 2
+M1_IN2 0
+M2_IN2 4
+M2_IN1 16
+M2_EN2 17
+ENCODER1_A 12
+ENCODER1_B 14
+ENCODER2_A 27
+ENCODER2_B 26
+```
 # Topic<a id='0'></a>
 * [Input Outputs](#1)
 * [PWM](#2)
