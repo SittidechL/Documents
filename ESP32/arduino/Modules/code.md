@@ -1,6 +1,19 @@
 # Topic<a id='0'></a>
 * [Dc Motor](#1)
-* 
+
+```
+ESP32 39PIN WROOM
+M1_EN1 15
+M1_IN1 2
+M1_IN2 0
+M2_IN2 4
+M2_IN1 16
+M2_EN2 17
+ENCODER1_A 12
+ENCODER1_B 14
+ENCODER2_A 27
+ENCODER2_B 26
+```
 ## Dc Motor<a id='1'></a>
 https://www.electronicsdna.com/basic-esp32-control-dc-motor-2ch/
 ![image](https://user-images.githubusercontent.com/60011264/164017831-6d67c101-1570-4738-9dd9-63bc893e0edc.png)
