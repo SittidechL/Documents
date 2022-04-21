@@ -24,12 +24,12 @@ code Program ESP32 for Control DC Motor and L298 Module
 *https://randomnerdtutorials.com/esp32-dc-motor-l298n-motor-driver-control-speed-direction/
 */
 
-int motor1Pin1 = 27;    // Set pin for Motor A
-int motor1Pin2 = 26;
-int enable1Pin = 14;
-int motor2Pin1 = 18;    // Set pin for Motor B
-int motor2Pin2 = 5;
-int enable2Pin = 19;
+int motor1Pin1 = 2;    // Set pin for Motor A
+int motor1Pin2 = 0;
+int enable1Pin = 15;
+int motor2Pin1 = 4;    // Set pin for Motor B
+int motor2Pin2 = 16;
+int enable2Pin = 17;
 
 // Setting PWM properties
 const int freq = 500;
