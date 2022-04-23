@@ -22,12 +22,19 @@ nano ~/.profile   # go down below and insert
 . $HOME/esp/esp-idf/export.sh
 nano ~/.bashrc     # go down below and insert
 . $HOME/esp/esp-idf/export.sh
-
+------
+sudo usermod -a -G dialout,tty $USER
+connect to ESP32
 ls /dev/tty*
 
-
-
-cp -r $IDF_PATH/example/get-started/blink .
-
+cd Desktop
+cp -r $IDF_PATH/examples/get-started/hello_world .
+cp -r $IDF_PATH/examples/get-started/blink .
+cd blink
+idf.py set-target esp32
+idf.py menuconfig
+idf.py build
+idf.py -p /dev/ttyUSB0 flash
+idf.py monitor
 ```
 
