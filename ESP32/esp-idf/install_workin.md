@@ -37,4 +37,6 @@ idf.py build
 idf.py -p /dev/ttyUSB0 flash
 idf.py monitor
 ```
-
+## ledc => led control
+* https://medium.com/jungletronics/esp32-idf-ledc-get-started-f973c4b7e41e
+* https://github.com/espressif/esp-idf/tree/master/examples/peripherals
