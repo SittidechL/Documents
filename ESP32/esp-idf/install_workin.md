@@ -30,6 +30,8 @@ ls /dev/tty*
 cd Desktop
 cp -r $IDF_PATH/examples/get-started/hello_world .
 cp -r $IDF_PATH/examples/get-started/blink .
+cp -r $IDF_PATH/examples/peripherals/gpio/generic_gpio .
+gpio lcd ledc mcpwm i2c
 cd blink
 idf.py set-target esp32
 idf.py menuconfig
