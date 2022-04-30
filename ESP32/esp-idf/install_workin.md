@@ -27,6 +27,8 @@ sudo usermod -a -G dialout,tty $USER
 connect to ESP32
 ls /dev/tty*
 
+cp -r ledc_basic/ ~/Desktop/
+
 cd Desktop
 cp -r $IDF_PATH/examples/get-started/hello_world .
 cp -r $IDF_PATH/examples/get-started/blink .
