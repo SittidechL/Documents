@@ -24,14 +24,15 @@ Over-current protection: Yes
 Steering control: Yes
 Speed control signal: Yes
 Size: 63*42*17mm(L*W*H); Probe size 3mm,length: fixing hole center distance 57mm; width:fixed hole center distance 36.5mm
- 
+``` 
 Power terminal Out:
 VCC(positive power supply)
 GND(negative one)
 MC(motor phases W)
 MB(motor phases V)
 MA(motor phase U)
- 
+```
+```
 Set for the control side:
 GND control terminal ground
 VR  the governor end 0-5V(corresponding to 10% of motor speed -100%)
@@ -39,14 +40,15 @@ ZF  reversing control(connected to 5V or ground can charge the motor rotation di
 M  tachometer pulse output(depending on the number of motor poles corresponding to the number of pulse per revolution of the output number)
 EL  enable control terminal(connected to 5V ot ground running then 5V, grounding the motor stops)
 5V  5V control terminal
- 
+```
+```
 HALL for the hall terminals:
 5V, Hall power positive
 Ha, Hall signal
 Hb, Hall signal
 Hc, Hall Signal
 GND, Hall negative
- 
+```
 Wiring:
 Control terminal for SET:
 1. The motor speed control wiring methods: available potentiometer system speed can also be connected to the MCU control, when the potentiometer control wiring, the potentiometer middle pin is connected to VR speed port, potentiometer connected to both ends of 5V and GND terminal voltage more high speed faster
