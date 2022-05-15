@@ -1,7 +1,7 @@
 * https://esp32io.com/esp32-tutorials
 * https://randomnerdtutorials.com/projects-esp32/
 * [ESP32 Pin30](https://github.com/SittidechL/Documents/blob/main/ESP32/arduino/pin.md)
-
+* https://robojax.com/reading-potentiometer-voltage-using-esp32-microcontroller
 ```
 ESP32 39PIN WROOM
 M1_EN1 15
