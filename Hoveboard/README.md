@@ -1,3 +1,6 @@
+Hall sensor: https://www.digikey.com/en/blog/using-bldc-hall-sensors-as-position-encoders-part-1
+
+
 Part #1 https://www.youtube.com/watch?v=TaCukBg4Hj8
 
 
