@@ -1,6 +1,8 @@
- * Firebase ESP32
- * https://www.electroniclinic.com/
- */
+//https://www.youtube.com/watch?v=jpYPIh8C_sM 
+
+// Firebase ESP32
+// https://www.electroniclinic.com/
+
  
 #include <WiFi.h>
 #include <FirebaseESP32.h>
