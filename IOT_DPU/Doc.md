@@ -15,8 +15,8 @@ Controller
  ESP32 = 1 ea
  Halocode = 1 ea
  R220ohm = 3 ea (LED)
- R1k   = 1 ea (SW)
- R5k   = 1 ea (SW)
+ R1k   = 1 ea (LDR / SW)
+ R5k   = 1 ea (?)
  LED   = 3 ea
  LDR   = 1 ea
  DHT11 = 1 ea
