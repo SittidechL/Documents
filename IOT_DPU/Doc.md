@@ -23,3 +23,23 @@ Controller
  SW    = 1 ea
  Base board = 1 ea
 
+Gravitec 
+smart prodution
+ระบบตรวจนับจำนนและเช็คประสิทธิภาพการทำงาน ( esp32 )
+เครื่องเช็คความต่อเนื่องของเครื่องจักรในสายพานการผลิต ( esp32 )
+
+Deizzem
+smart wear house
+
+ArcGIS www.esrith.com
+add log / lat in project
+
+InnoSoftBiz
+smart factory
+preventive maintenace-Heat of motor machine vibration
+safty detect การเข้าพท ความเร็วFork lift
+
+Tely360
+platform for healty
+เก็บขอมูลของผู้สูงอายุ เพื่อส่งมาให้ dashboard
+ผู้ป่วย อัสไสเมอร์ ด้วยที่ต้องการรู้ว่าไปไหน ต้องมี gps
