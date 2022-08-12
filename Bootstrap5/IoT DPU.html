@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bootstrap5Basic/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bootstrap5Basic/css/bootstrap.css">
+    <script src="Bootstrap5Basic/js/bootstrap.min.js"></script>
+</head>
+    <style>
+      .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.5fr 1.5fr;
+        grid-template-areas: 
+          "content1 content2 content3"
+          "content1 content2 content4";
+        grid-gap: 0.2rem
+      }   
+      #content1{
+        background: #6fffd2;
+        grid-area:content1;
+      }
+      #content2{
+        background: #64ffda;
+        grid-area: content2;
+      }
+      #content3{
+        background: #73ffba;
+        grid-area: content3;
+      }
+      #content4{
+        background: #73ffba;
+        grid-area: content4;
+      }
+
+      @media only screen and (max-width:550px){
+        .container{
+          grid-template-columns: 1fr;
+          grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr ;
+          grid-template-areas: 
+          "content1"
+          "content2"
+          "content3"
+          "content4";
+        }
+      }
+      h1,h4{
+        text-align: center;
+      }
+      span.t1{
+        display: inline-block;
+        height: 200px;
+        width: 200px;
+        margin-left: 15%;
+        background-color: yellow;
+        padding: 100px;   
+      
+      }
+    </style>
+<body>
+  <div class="container">
+    <div id="content1">
+      <h1>14:00-15:00</h1>
+      <div class="m-4"><h4>จำนวนถาด</h4></div>
+        <span class="t1 border rounded-pill">
+          <div><h1>0</h1></div>
+          <div><h4>ถาด</h4></div>
+        </span>
+      <div class="m-4"><h4>จำนวนชิ้นงาน</h4></div>
+        <span class="t1 border rounded-pill">
+          <div><h1>0</h1></div>
+          <div><h4>ชิ้น</h4></div>
+        </span>
+    </div>
+    <div id="content2">
+      <h1>รายงาน ณ วันนี้</h1>
+      <div class="m-4"><h4>ยอดผลิตรวม ณ ตอนนี้</h4></div>
+        <span class="t1 border rounded-pill">
+          <div><h1>0</h1></div>
+        </span>
+      <div class="">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Time</th>
+              <th scope="col">Count</th>
+              <th scope="col">Product</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">13:00-14:00</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">14:00-15:00</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">15:00-16:00</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">16:00-17:00</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">17:00-18:00</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">18:00-19:00</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">19:00-20:00</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">20:00-21:00</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th scope="row">21:00-22:00</th>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+
+          </tbody>
+        </table> 
+      </div>
+    </div>
+    <div id="content3">
+      <h1>ผลสรุป</h1>
+      <div><h4>รวมทั้งหมด : 0</h4></div> 
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      <div><h4>เป้าหมาย ชม : -1200</h4></div> 
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      <div><h4>เป้าหมาย วัน : -15000</h4></div> 
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+    <div id="content4">
+      <h1>Result</h1>
+      <div>
+        <div class="card">
+          <!-- <h5 class="card-header h1">Result</h5> -->
+          <div class="card-body">
+              <div id="traffic-chart"></div>
+          </div>
+      </div>  
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script> 
+  <script>
+      new Chartist.Line('#traffic-chart', {
+          labels: ['1', '2', '3', '4', '5', '6'],
+          series: [
+              [5, 7, 6, 9, 8, 1]
+          ]
+          }, {
+          low: 0,
+          showArea: true
+      });
+  </script>   
+</body>
+</html>
