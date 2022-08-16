@@ -1,0 +1,84 @@
+<!-- Complete Project Details at: https://RandomNerdTutorials.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP Firebase App</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- Gauge -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.1/raphael-min.js"
+    integrity="sha512-OgnkEZsEQs8gIrCsLwV/WprYqIUaJ4bymAgcfs2nDK7variw7M+4hJPM2fyK8EQYGh/zL9Bau/HiXVGPS7khnw=="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.5.1/justgage.js"
+    integrity="sha512-Zza9CcelM2MGecqxvnvsDvFy/I0tIxtp/dVodlsld9+9k4Z9rZNkosDGIdiIrCbKJidh7XYaWWoDgKUf5unThg=="
+    crossorigin="anonymous"></script>
+    
+    <!-- include Gauges Javascript library-->
+    <script src="https://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+
+    <!-- graph -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <script>
+    // REPLACE WITH YOUR web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyD5PtpLJCwz5hb1vLhBVxiUdmFeozyokZ0",
+      authDomain: "iot-pex.firebaseapp.com",
+      databaseURL: "https://iot-pex-default-rtdb.firebaseio.com",
+      projectId: "iot-pex",
+      storageBucket: "iot-pex.appspot.com",
+      messagingSenderId: "755062941572",
+      appId: "1:755062941572:web:3a6a8b87ef568139d49fd1"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+</script>
+<script src="app.js" defer></script>
+
+</head>
+<body>
+    <h1>ESP32 Firebase Web App Example</h1>
+    <p>Reading int: <span id="reading-int"></span></p>
+    <p>Reading float: <span id="reading-float"></span></p>
+    <p>Button: <span id="reading-button"></span></p>
+    <p>myValue: <span id="reading-myValue"></span></p>
+    <p>LDRValue: <span id="reading-ldr"></span></p>
+    <br>
+
+    <!-- gauge reading -->
+    <div>
+        Gauge reading int :
+        <div id="gauge" style = 'width: 100%;height: 240px;' class="gauge"></div>
+    </div>
+
+    <div id ="gauges-div">
+        <div class="cards">
+          <!--TEMPERATURE-->
+          <div class="card">
+            <canvas id="gauge-temperature"></canvas>
+          </div>
+        </div>
+    </div>      
+    <!-- send back massage -->
+    <div>
+        Message (0 or 1) : 
+        <input type="text" class="form-control" id="inputMessage" placeholder="Message">
+        <button type="submit" onclick="sendValue()">Switch</button>
+    </div>
+
+    <div>
+        Graph reading float: 
+        <canvas id="myChart" style = 'margin-top: 1 rem; width: 100%; max-width: 600px;'></canvas>
+    </div>
+
+</body>
+</html>
