@@ -5,4 +5,4 @@
         age: 45
     }
     db.ref('users/user2').set(obj)
-``
+```
