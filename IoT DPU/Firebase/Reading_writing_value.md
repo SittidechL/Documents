@@ -3,7 +3,12 @@ html
 ```html
 <h1 id="reading-value"></h1>
 ```
-
+js
+```js
+var readingValue = document.getElementById('reading-value')
+    db.ref('web/message').on('value',snap => readingValue.innerText = snap.val());
+    console.log(readingValue);
+```
 js
 ```js
 db.ref('web/message/').on('value', (snapshot) => {
