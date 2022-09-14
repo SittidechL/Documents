@@ -6,3 +6,6 @@ https://firebase.google.com/docs/flutter/setup?platform=web
 
 setup flutter + firebase realtime
 https://www.youtube.com/watch?v=sj9_lOgysXk
+
+A guide on Flutter Realtim Database with Firebase
+https://www.youtube.com/watch?v=ofedT-v6858
