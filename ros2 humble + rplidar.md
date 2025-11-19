@@ -56,3 +56,7 @@ ros2 run rplidar_ros rplidar_composition --ros-args \
   -p serial_baudrate:=115200 \
   -p frame_id:=laser
 ```
+```bash
+ros2 run tf2_tools view_frames
+```
+
