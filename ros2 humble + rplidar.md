@@ -60,3 +60,6 @@ ros2 run rplidar_ros rplidar_composition --ros-args \
 ros2 run tf2_tools view_frames
 ```
 
+```bash
+ros2 run imu_madgwick imu_madgwick_node
+```
